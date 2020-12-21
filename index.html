@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>Navigational links</h1>
+
+            <!-- Image -->
+            <img src="https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-superJumbo.jpg" alt="two men biking">
+
+            <img src="http://www.sololearn.com/images/tree.jpg" height="150px" width="150px" border="1px" alt="" /> 
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                        <!-- Two Men Biking Image -->
+                    <li><a href="https://www.wikipedia.com/" target="_blank">THis is a link to Wikipedia</a></li>
+                        <!-- Link to W3Schools -->
+                    <li><a href="https://www.w3schools.com/" target="_blank">This is a link to W3Schools</a></li>
+                            <!-- Link to Another Page -->
+                    <li><a href="./anotherpage.html">Another Page</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <!-- Main  -->
+        <main>
+            <h1>Linking to Same Page</h1>
+            
+            <ul>
+                <li><a href="#numberOne">Number 1</a></li>
+                <li><a href="#numberTwo">Number 2</a></li>
+                <li><a href="#numberThree">Number 3</a></li>
+            </ul>
+            <!-- Sample Test -->
+            <section id="numberOne">
+                <h2>Number 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat in enim atque, iusto dolores eos incidunt qui optio dolor, eligendi nemo ex repellendus non omnis laudantium, expedita animi soluta?</p>
+            </section>
+        
+            <section id="numberTwo">
+                <h2>Number 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat in enim atque, iusto dolores eos incidunt qui optio dolor, eligendi nemo ex repellendus non omnis laudantium, expedita animi soluta?</p>
+            </section>
+        
+            <section id="numberThree">
+                <h2>Number 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat in enim atque, iusto dolores eos incidunt qui optio dolor, eligendi nemo ex repellendus non omnis laudantium, expedita animi soluta?</p>
+            </section>
+        
+            <!-- Table -->
+            <table>
+                <h1>My Schedule</h1>
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th rowspan="3">Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Morning</td>
+                        <td rowspan="3">Work</td>
+                        <td rowspan="3">Relax</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Afternoon</td>
+                    </tr>
+                    <tr>
+                        <td>Evening</td>
+                        <td>Dinner</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Days</th>
+                        <td>7days</td>
+                        <td colspan="2">5hrs</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Forms -->
+            <form action="/example.html" method="POST">
+                <h1>This is a Sample Login Form</h1>
+                <p>Hi This is a paragraph</p>
+                
+                <!-- Input Text -->
+                <label for="username">Username: </label>
+                <input type="text" name="username" value="Rendell">
+
+                <!-- Input Password -->
+                <label for="user-pw">Password: </label>
+                <input type="password" name="user-pw" id="user-pw">
+                
+                <!-- Input Number -->
+                <label for="amount">How many patties would you like?</label>
+                <input id="amount" step="2" name="amount" type="number">
+
+                <!-- Input Range -->
+                <label for="volume">Volume Control</label>
+                <input id="volume" name="volume" type="range" min="0" max="100" step="5">
+
+                <!-- Input checkboxes -->
+                <section class="languages">
+                    <span>What Language would you like?</span>
+                    <br>
+                    <input type="checkbox" name="language" id="js" value="js">
+                    <label for="js">Javascript</label>
+
+                    <input type="checkbox" name="language" id="java" value="java">
+                    <label for="java">Java</label>
+
+                    <input type="checkbox" name="language" id="python" value="python">
+                    <label for="python">Python</label>
+                </section>
+
+                <!-- Input Radio Button -->
+                <section class="sureness">
+                    <span>Are you sure you would like this language?</span>
+                    <br>
+                    <input id="yes" type="radio" name="sure" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input id="no" type="radio" name="sure" value="no">
+                    <label for="no">No</label>
+                </section>
+
+                <!-- Dropdown List Input -->
+                <section class="lang-type">
+                    <label for="lang">What type of language would you like?</label>
+
+                    <select class="lang-type" name="lang" id="lang">
+                        <option value="very-hard">Very Hard</option>
+                        <option value="medium-hard">Medium Hard</option>
+                        <option value="slight-hard">Slight Hard</option>
+                    </select>
+                </section>
+
+
+                <!-- Datalist Input -->
+                <section class="country-selection">
+                    <label for="country">Ideal country to visit?</label>
+                    <input type="text" list="countries" id="country" name="country">
+
+                    <datalist id="countries">
+                        <option value="New Zealand"></option>
+                        <option value="United States"></option>
+                        <option value="Japan"></option>
+                        <option value="United Kingdom"></option>
+                    </datalist>
+                </section>
+
+                <!-- Text Area element -->
+                <section class="comments">
+                    <label for="comment">Comments or Suggestions?</label>
+                    <br>
+                    <textarea class="comments" id="comment" name="comment" rows="3" cols="40">Ex. I would like to</textarea>
+                </section>
+
+                <!-- Submit Button -->
+                <section class="submission">
+                    <input class ="submission" type="submit" value="send">
+                </section>
+            </form>
+            
+              <!-- Article and Section -->
+              <section>
+                <article>
+                  <h2>Facts About Dogs</h2>
+                  <p>
+                Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+                  </p>
+                </article>
+              </section>
+              
+              <!-- Aside -->
+              <section>
+                <article>
+                  <h2>Facts About Dogs</h2>
+                  <p>
+                  Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+                  </p>
+                </article>
+                <aside>
+                  <p>A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+                  </p> 
+                </aside>
+              </section> 
+
+              <!-- Figure and Figcaption -->
+              <figure>
+                <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg">
+                <figcaption>Pitbull</figcaption>
+              </figure>
+
+              <!-- Audio -->
+              <audio controls autoplay>
+                <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+              </audio>
+              
+              <!-- Video and Embed -->
+              <video controls src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" loop autoplay></video>
+      
+              <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif">
+              
+     </main>
+     <!-- Footer -->
+     <footer>
+         <p>Contact me at +639975864604</p>
+     </footer>
+    </body>
+</html>
+
+style="background-color: rgba(0, 0, 0, 0.2)"
